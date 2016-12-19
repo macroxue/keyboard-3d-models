@@ -5,5 +5,5 @@ its clones.
 
 For example, `left-split.h` is rendered like this.
 
-![Left split](https://github.com/macroxue/keyboard-3d-models/master/left-split.png)
+![Left split](https://github.com/macroxue/keyboard-3d-models/blob/master/left-split.png)
 
