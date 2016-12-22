@@ -161,9 +161,26 @@ module keyboard_parts() {
   translate([-1,0,0]) ring_pinky_only();
 }
 
+module foot() {
+  difference() {
+    union() {
+      cylinder(r=fr,h=fl,center=true);
+      translate([0,0,-fl/2-sh/2]) cube([sw,sw,sh+d], center=true);
+      translate([0,0,-fl/2-ph/2-sh/2]) cube([cw,cw,ph+d], center=true);
+    }
+    translate([0,0,fl/2]) rotate([0,20,0]) cube([cw,cw,3], center=true);
+  }
+  fl = 30;  // foot length
+  fr = 3;   // foot radius
+  ph = 5;   // plug height
+  sw = cw+2;// stopper width
+  sh = 2;   // stopper height
+}
+
 //keyboard();
 keyboard_parts();
 //rotate([0,180+20,0]) translate([-kd*3,-kd/2,0]) thumb_index_only();
 //rotate([0,180+10,0]) translate([-kd*1,-kd/2,0]) middle_column_only();
 //rotate([0,180+0,0]) translate([kd*2.5,-kd/2,0]) ring_pinky_only();
+//foot();
 
