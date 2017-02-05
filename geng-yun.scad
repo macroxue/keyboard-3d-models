@@ -166,9 +166,9 @@ module foot() {
       translate([0,0,-fl/2-sh/2]) cube([sw,sw,sh+d], center=true);
       translate([0,0,-fl/2-ph/2-sh/2]) cube([cw-0.2,cw-0.2,ph+d], center=true);
     }
-    translate([0,0,fl/2]) rotate([0,20,0]) cube([cw,cw,3], center=true);
+    translate([0,0,fl/2]) rotate([0,15,0]) cube([cw,cw,3], center=true);
   }
-  fl = 36;  // foot length
+  fl = 25;  // foot length
   fr = 3;   // foot radius
   ph = 5;   // plug height
   sw = cw+2;// stopper width
